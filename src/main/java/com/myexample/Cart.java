@@ -6,12 +6,47 @@ package com.myexample;
 
 public class Cart implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Cart() {
-    }
+	@org.kie.api.definition.type.Label(value = "customer")
+	private com.myexample.Customer customer;
+	@org.kie.api.definition.type.Label(value = "cart items")
+	private java.util.List<com.myexample.Product> cartItems;
+	@org.kie.api.definition.type.Label(value = "discount")
+	private double discount;
 
+	public Cart() {
+	}
 
+	public com.myexample.Customer getCustomer() {
+		return this.customer;
+	}
 
+	public void setCustomer(com.myexample.Customer customer) {
+		this.customer = customer;
+	}
+
+	public java.util.List<com.myexample.Product> getCartItems() {
+		return this.cartItems;
+	}
+
+	public void setCartItems(java.util.List<com.myexample.Product> cartItems) {
+		this.cartItems = cartItems;
+	}
+
+	public double getDiscount() {
+		return this.discount;
+	}
+
+	public void setDiscount(double discount) {
+		this.discount = discount;
+	}
+
+	public Cart(com.myexample.Customer customer,
+			java.util.List<com.myexample.Product> cartItems, double discount) {
+		this.customer = customer;
+		this.cartItems = cartItems;
+		this.discount = discount;
+	}
 
 }
