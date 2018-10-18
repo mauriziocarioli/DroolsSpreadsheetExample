@@ -58,8 +58,8 @@ public class Customer implements Serializable {
 	    return sb.toString();
 	}
 
-	public Customer(java.lang.String coupon, boolean newCustomer,
-			com.myexample.Cart cart) {
+	public Customer(String coupon, boolean newCustomer,
+			Cart cart) {
 		this.coupon = coupon;
 		this.newCustomer = newCustomer;
 		this.cart = cart;
