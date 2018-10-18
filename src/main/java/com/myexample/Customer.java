@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 public class Customer implements Serializable {
 
-	static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -3991522817200723246L;
 
 	@org.kie.api.definition.type.Label("coupon")
 	private String coupon;

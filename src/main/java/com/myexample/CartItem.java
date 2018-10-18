@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 public class CartItem implements Serializable {
 
-	static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -7763658409038984469L;
 
 	@org.kie.api.definition.type.Label(value = "cart")
 	private Cart cart;

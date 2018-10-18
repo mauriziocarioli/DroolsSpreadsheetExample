@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 public class Cart implements Serializable {
 
-	static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -8271470625896780879L;
 
 	@org.kie.api.definition.type.Label(value = "customer")
 	private Customer customer;
