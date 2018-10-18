@@ -46,6 +46,11 @@ public class Cart implements Serializable {
 	public void setDiscount(double discount) {
 		this.discount = discount;
 	}
+	
+	public void addItem(Product product, int qty) {
+	    CartItem cartItem = new CartItem(this, product, quantity);
+	    this.cartItems.add(cartItem);
+	}
 
 	public Cart(Customer customer,
 			List<CartItem> cartItems, double discount) {
