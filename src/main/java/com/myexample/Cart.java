@@ -72,6 +72,10 @@ public class Cart implements Serializable {
 	      .append("\nTotal After Discount: ").append(getFinalPrice());
 	   return sb.toString();
 	}
+	
+	public Cart(Customer customer) {
+	    this.customer = customer;
+	}
 
 	public Cart(Customer customer,
 			List<CartItem> cartItems, double discount) {
