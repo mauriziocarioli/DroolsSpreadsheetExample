@@ -1,6 +1,6 @@
 package com.myexample;
 
-import com.myexample;
+import com.myexample.*;
 import java.lang.String;
 import java.lang.StringBuilder;
 import java.io.Serializable;
