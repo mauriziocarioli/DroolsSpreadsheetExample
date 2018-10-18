@@ -58,7 +58,7 @@ public class Cart implements Serializable {
 	    return total;
 	}
 	
-	public int get FinalPrice() {
+	public int getFinalPrice() {
 	    return getTotalPrice() - (int)getDiscount(); 
 	}
 	
