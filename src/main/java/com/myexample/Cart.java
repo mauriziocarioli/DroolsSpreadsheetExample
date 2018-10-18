@@ -46,7 +46,7 @@ public class Cart implements Serializable {
 	}
 	
 	public void addItem(Product product, int qty) {
-	    CartItem cartItem = new CartItem(this, product, quantity);
+	    CartItem cartItem = new CartItem(this, product, qty);
 	    this.cartItems.add(cartItem);
 	}
 	
