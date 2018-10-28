@@ -7,7 +7,7 @@
   <version>1.0.0</version>
   <packaging>kjar</packaging>
   <name>DroolsSpreadsheetExample</name>
-  <description>A simple example of a Drools spreadsheet (https://examples.javacodegeeks.com/enterprise-java/jboss-drools/jboss-drools-spreadsheet-example/)</description>
+  <description>A simple example of a Drools spreadsheet (adapted from https://examples.javacodegeeks.com/enterprise-java/jboss-drools/jboss-drools-spreadsheet-example/)</description>
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
