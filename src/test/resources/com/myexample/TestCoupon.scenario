@@ -51,6 +51,25 @@
       <name>$customer</name>
       <isModify>false</isModify>
     </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.CallMethod>
+      <state>1</state>
+      <methodName>addItem</methodName>
+      <variable>$customer</variable>
+      <callFieldValues>
+        <org.drools.workbench.models.testscenarios.shared.CallFieldValue>
+          <field>addItem</field>
+          <value>0</value>
+          <nature>0</nature>
+          <type>com.myexample.Product</type>
+        </org.drools.workbench.models.testscenarios.shared.CallFieldValue>
+        <org.drools.workbench.models.testscenarios.shared.CallFieldValue>
+          <field>addItem</field>
+          <value>1</value>
+          <nature>1</nature>
+          <type>Integer</type>
+        </org.drools.workbench.models.testscenarios.shared.CallFieldValue>
+      </callFieldValues>
+    </org.drools.workbench.models.testscenarios.shared.CallMethod>
     <execution-trace/>
   </fixtures>
   <rules/>
