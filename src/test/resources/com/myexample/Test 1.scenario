@@ -15,7 +15,31 @@
       <name>customer</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>Cart</type>
+      <fieldData>
+        <field-data>
+          <name>totalPrice</name>
+          <value>100</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>cart</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace/>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>discount</fieldName>
+          <expected></expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>cart</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
   <rules/>
   <inclusive>false</inclusive>
