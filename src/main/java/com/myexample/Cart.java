@@ -36,7 +36,7 @@ public class Cart implements Serializable {
 	
 	public int getTotalPrice() {
 	    int total = 0;
-	    System.out.println(">>>>>>>>>>>>>>>>> HERE HERE");
+	    System.out.println(">>>>>>>>>>>>>>>>> Calling Cart.getTotalPrice() <<<<<<<<<<<<<<<<<<");
 	    for (CartItem item : cartItems) {
 	        total += item.getProduct().getPrice()*item.getQty();
 	    }
