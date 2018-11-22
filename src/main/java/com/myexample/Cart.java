@@ -1,6 +1,5 @@
 package com.myexample;
 
-import com.myexample.*;
 import java.lang.String;
 import java.lang.StringBuilder;
 import java.util.List;
@@ -11,22 +10,12 @@ public class Cart implements Serializable {
 
 	private static final long serialVersionUID = -8271470625896780879L;
 
-	@org.kie.api.definition.type.Label(value = "customer")
-	private Customer customer;
 	@org.kie.api.definition.type.Label(value = "cart items")
 	private java.util.List<CartItem> cartItems = new ArrayList<CartItem>();
 	@org.kie.api.definition.type.Label(value = "discount")
 	private double discount;
 
 	public Cart() {
-	}
-
-	public Customer getCustomer() {
-		return this.customer;
-	}
-
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
 	}
 
 	public List<CartItem> getCartItems() {
@@ -45,11 +34,6 @@ public class Cart implements Serializable {
 		this.discount = discount;
 	}
 	
-	public void addItem(Product product, int qty) {
-	    CartItem cartItem = new CartItem(this, product, qty);
-	    this.cartItems.add(cartItem);
-	}
-	
 	public int getTotalPrice() {
 	    int total = 0;
 	    for (CartItem item : cartItems) {
@@ -62,24 +46,7 @@ public class Cart implements Serializable {
 	    return getTotalPrice() - (int)getDiscount(); 
 	}
 	
-	public String toString() {
-	    StringBuilder sb = new StringBuilder();
-	    for (CartItem item : cartItems) {
-	        sb.append(item).append("\n");        
-	    }
-	    sb.append("Discount: ").append(getDiscount())
-	      .append("\nTotal: ").append(getTotalPrice())
-	      .append("\nTotal After Discount: ").append(getFinalPrice());
-	   return sb.toString();
-	}
-	
-	public Cart(Customer customer) {
-	    this.customer = customer;
-	}
-
-	public Cart(Customer customer,
-			List<CartItem> cartItems, double discount) {
-		this.customer = customer;
+	public Cart(List<CartItem> cartItems, double discount) {
 		this.cartItems = cartItems;
 		this.discount = discount;
 	}
