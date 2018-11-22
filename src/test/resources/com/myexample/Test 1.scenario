@@ -28,18 +28,6 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace/>
-    <expect-fact>
-      <fieldValues>
-        <expect-field>
-          <fieldName>discount</fieldName>
-          <expected>5.0</expected>
-          <operator>==</operator>
-          <nature>0</nature>
-        </expect-field>
-      </fieldValues>
-      <name>cart</name>
-      <anonymous>false</anonymous>
-    </expect-fact>
   </fixtures>
   <rules/>
   <inclusive>false</inclusive>
