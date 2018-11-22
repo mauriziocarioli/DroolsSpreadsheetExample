@@ -25,6 +25,7 @@ public class Customer implements Serializable {
 	}
 
 	public boolean isNewCustomer() {
+	    System.out.println("@@@@@@@@@@@@@@@@@@@@@ calling Customer.isNewCustomer() @@@@@@@@@@@@@@@@@@@@@@");
 		return this.newCustomer;
 	}
 
