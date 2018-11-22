@@ -1,0 +1,3 @@
+package com.myexample;
+
+global com.myexample.Cart $cart;
