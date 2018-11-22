@@ -11,11 +11,6 @@
           <value>DISC01</value>
           <nature>4</nature>
         </field-data>
-        <field-data>
-          <name>newCustomer</name>
-          <value>true</value>
-          <nature>1</nature>
-        </field-data>
       </fieldData>
       <name>customer</name>
       <isModify>false</isModify>
