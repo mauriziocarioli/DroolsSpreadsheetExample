@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myexample</groupId>
   <artifactId>DroolsSpreadsheetExample</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>kjar</packaging>
   <name>DroolsSpreadsheetExample</name>
   <description>A simple example of a Drools spreadsheet (adapted from https://examples.javacodegeeks.com/enterprise-java/jboss-drools/jboss-drools-spreadsheet-example/)</description>
