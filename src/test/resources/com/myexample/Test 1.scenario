@@ -1,13 +1,34 @@
 <scenario>
-  <name>Test 1</name>
+  <name>Test 1.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <fact-data>
+      <type>Customer</type>
+      <fieldData>
+        <field-data>
+          <name>coupon</name>
+          <value>DISC01</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>newCustomer</name>
+          <value>true</value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>customer</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace/>
+  </fixtures>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myexample</packageName>
   <imports>
     <imports/>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
